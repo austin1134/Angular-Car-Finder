@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, intitial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Insert title here</title>
+
+    <link rel="shortcut icon" href="<!--add icon for bowser tab here-->" />
+
+    <meta name=description content="">
+
+    <!--WEB FONTS-->
+    <link href=" " />
+
+    <!--CORE CSS-->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/font-awesome.css" rel="styelsheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+
+</head>
+
+
+
+<body class="smoothscroll">
+    <div id="wrapper">
+        <div id="header" class="translucent">
+            <!--Top Nav-->
+            <header id="topNav" class="sticky">
+                <!--supported classes: translucent = translucent topNav , bordered = translucent border.-->
+                <div class="container">
+                    <div class="navbar padding-top20">
+                        <!--Logo-->
+                        <a class="logo pull-left" href=" ">
+
+                        </a>
+                        <span class="h1 padding20 styleColor">CF Car Hunter</span>
+
+                        <!--Top Nav-->
+                        <div class="navbar-collapse nav-main-collapse collapse pull-right">
+                            <nav class="nav-main">
+                                <ul id="topMain" class="nav nav-pills nav-main">
+                                    <!--add "white" class if you want white menu text-->
+                                    <li class="mega-menu active"><a href="/">Home</a></li>
+                                    <li class="mega-menu"><a href="/Help">API</a></li>
+                                </ul>
+                            </nav>
+                        </div><!--navbar-collapse-->
+                    </div>
+                </div><!--container-->
+            </header>
+        </div>
+
+        <div ng-app="CarFinderApp">
+            <div ng-controller="CarFinderAppController">
+                <div class="row">
+                    <div class="col-sm-3">
+                        -->
+                        <!-- HTML select elements for the dropdowns -->
+
+                        <select id="yearSelection" class="form-control"
+                                ng-model="selectedMake" ng-options="make for make in makes"
+                                ng-click="getModels()"></select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="makeSelection" class="form-control"
+                                ng-model="selectedMake" ng-options="make for make in makes"
+                                ng-click="getModels()"></select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select id="modelSelection" class="form-control"
+                                ng-model="selectedTrim" ng-options="trim for trim in trims"
+                                ng-click="getCar()"></select>
+                    </div>
+                </div>
+                <!--Hidden DIV containing car data results-->
+                <div id="carInfo">
+                    <h2 class="row">
+                        <!--Insert car heading here-->
+                        {{carData.car.model_year}} {{carData.car.make}}
+                        {{carData.car.model_name}}
+                    </h2>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <!--property labels-->
+                            Trim:<br />
+                            Body Style:<br />
+                            Engine Pos:<br />
+                            Engine (CC):
+                        </div>
+                        <div class="col-sm-10">
+                            <!--property values-->
+                            {{carData.car.model_trim}}<br />
+                            {{carData.car.body_style}}<br />
+                            {{carData.car.engine_position}}<br />
+                            {{carData.car.engine_cc}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /#wrapper-->
+    <!--JAVASCRIPT FILES-->
+    <script type="text/javasript" src="assets/plugins/jquery-2.1.4.min.js">
+    </script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="NgApp/app.js"></script>
+    <script src="NgApp/CarFinderAppController.js"></script>
+</body>
+</html>

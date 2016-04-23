@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <!-- ==============================================
+    Title and Meta Tags
+    =============================================== -->
+    <meta charset="utf-8">
+    <title>Car Finder | Clean Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">j
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/apple-touch-icon-114x114.png">
+
+    <!-- ==============================================
+    CSS
+    =============================================== -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link id="main" rel="stylesheet" href="../css/shapes-blue.css">
+
+
+    <!-- ==============================================
+    Fonts
+    =============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- ==============================================
+    JS
+    =============================================== -->
+    <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="../js/libs/modernizr.min.js"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+
+    <!--=== PAGE PRELOADER ===-->
+    <div id="page-loader"><h1 class='loader-logo'>Car Finder<span> </span></h1><span class="page-loader-gif"></span></div>
+
+    <!--=== BACKGROUND ===-->
+    <div id="backgrounds" data-backgrounds="../assets/CarFinderPicture1.jpg,../assets/CarFinderPicture2.jpg,../assets/CarFinderPicture3.jpg/,../assets/CarFinderPicture4.jpg"></div>
+    <div id="color-overlay"></div>
+
+    <!-- ==============================================
+    MAIN NAV
+    =============================================== -->
+    <div id="main-nav" class="navbar navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+
+                <!-- ======= LOGO ========-->
+                <a class="navbar-brand scrollto" href="#home">Car Finder<span></span></a>
+                <!-- <a class="navbar-brand scrollto ir-logo" href="#home">SHAPES<span> / Creative Studio</span></a> -->
+
+            </div>
+
+            <div id="site-nav" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="sr-only">
+                        <a href="#home" class="scrollto">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="scrollto">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="scrollto">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="scrollto">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="scrollto">Contact</a>
+                    </li>
+                </ul>
+            </div><!--End navbar-collapse -->
+
+        </div><!--End container -->
+
+    </div><!--End main-nav -->
+    <!-- ==============================================
+    HEADER
+    =============================================== -->
+    <header id="home" class="jumbotron">
+
+        <div class="container">
+
+            <img class="img-responsive img-center header-logo" src="../assets/drop.png" alt="">
+
+            <div class="message-box clearfix">
+
+                <div class="first-line">
+                    <p>The best things in life</p>
+                </div>
+
+                <div class="second-line flexslider home-slider">
+
+                    <ul class="slides">
+
+                        <li><p>are not things</p></li>
+
+                        <li><p>are Shapes</p></li>
+
+                    </ul>
+
+                </div><!--End home-slider -->
+
+            </div><!--End message-box -->
+
+        </div><!--End container -->
+
+    </header><!--End header -->
+    <!-- ==============================================
+    SERVICES
+    =============================================== -->
+    <section id="services" class="padding-bottom bg-light">
+
+        <div class="container">
+
+            <div class="section-header scrollimation fade-up">
+
+                <div class="section-icon"><i class="fa fa-wrench"></i></div>
+
+                <h1 class="section-title">About</h1>
+
+                <p class="section-description lead">The Car Finder Application is...<br /></p>
+
+            </div><!--End section-header -->
+            
+        <body class="smoothscroll">
+                <div id="wrapper">
+                    <div id="header" class="translucent">
+                        <!--Top Nav-->
+                        <header id="topNav" class="sticky">
+                            <!--supported classes: translucent = translucent topNav , bordered = translucent border.-->
+                            <div class="container">
+                                <div class="navbar padding-top20">
+                                    <!--Logo-->
+                                    <a class="logo pull-left" href=" ">
+
+                                    </a>
+                                    <span class="h1 padding20 styleColor">CF Car Finder</span>
+
+                                    <!--Top Nav-->
+                                    <div class="navbar-collapse nav-main-collapse collapse pull-right">
+                                        <nav class="nav-main">
+                                            <ul id="topMain" class="nav nav-pills nav-main">
+                                                <!--add "white" class if you want white menu text-->
+                                                <li class="mega-menu active"><a href="/">Home</a></li>
+                                                <li class="mega-menu"><a href="/Help">API</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div><!--navbar-collapse-->
+                                </div>
+                            </div><!--container-->
+                        </header>
+                    </div>
+
+                    <div ng-app="CarFinderApp">
+                        <div ng-controller="CarFinderAppController">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <select id="yearSelection" class="form-control"
+                                            ng-model="selectedYear" ng-options="year for year in years"
+                                            ng-change="getMakes()"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select id="makeSelection" class="form-control"
+                                            ng-model="selectedMake" ng-options="make for make in makes"
+                                            ng-change="getModels()"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select id="modelSelection" class="form-control"
+                                            ng-model="selectedModel" ng-options="model for model in models"
+                                            ng-change="getTrims()"></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <select id="trimSelection" class="form-control"
+                                            ng-model="selectedTrim" ng-options="trim for trim in trims"
+                                            ng-change="getCar()"></select>
+                                </div>
+                                <div id="btnBlock">
+                                    <button id="submitbtn" style="opacity:.2; width:225px" disabled data-toggle="modal" data-target="#resultmodal" ng-controller="CarFinderAppController" style="color:#000000;background-color:#ffffff;width:225px" class="btn btn-group">{{($scope.loadingMessage)? 'LOADING...' : 'SELECT'}}</button>
+                                </div>
+                            </div>
+                            <!--Hidden DIV containing car data results-->
+                            <div id="carInfo">
+                                <h2 class="row">
+                                    <!--Insert car heading here-->
+                                    {{carData.car.model_year}} {{carData.car.make}}
+                                    {{carData.car.model_name}}
+                                </h2>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <!--property labels-->
+                                        Trim:<br />
+                                        Body Style:<br />
+                                        Engine Pos:<br />
+                                        Engine (CC):
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <!--property values-->
+                                        {{carData.car.model_trim}}<br />
+                                        {{carData.car.body_style}}<br />
+                                        {{carData.car.engine_position}}<br />
+                                        {{carData.car.engine_cc}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /#wrapper-->
+
+</div><!--End container -->
+
+    </section><!--End services section-->
+    <!-- ==============================================
+    SOCIAL LINKS
+    =============================================== -->
+
+    <section id="social-links" class="bg-transparent">
+
+        <div class="container">
+            <ul>
+                <li class="scrollimation fade-up">
+                    <!--<a href="#twitterlink" class="icon"><i class="fa fa-twitter"></i></a>
+                    <h4>Follow us on Twitter</h4>
+                </li>
+                <li class="scrollimation fade-up d1">
+                    <a href="#facebooklink" class="icon"><i class="fa fa-facebook"></i></a>
+                    <h4>Like us on Facebook</h4>
+                </li>
+                <li class="scrollimation fade-up d2">
+                    <a href="#dribbblelink" class="icon"><i class="fa fa-dribbble"></i></a>
+                    <h4>Find us on Dribbble</h4>
+                </li>
+                <li class="scrollimation fade-up d3">
+                    <a href="#gpluslink" class="icon"><i class="fa fa-google-plus"></i></a>
+                    <h4>Find us on Google+</h4>
+                </li>
+            </ul>
+                        -->
+        </div><!--End container -->
+
+    </section><!--End skills section -->
+    <!-- ==============================================
+    FOOTER
+    =============================================== -->
+    <footer id="main-footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6 left-col">
+                    <p><span>Car Finder</span> &copy;Copyright 2013 / All Rights Reserved</p>
+                </div>
+
+                <div class="col-sm-6 right-col">
+
+                    <ul class="footer-nav">
+                        <li><a class="scrollto" href="#home">Home</a></li>
+                        <li><a class="scrollto" href="#services">Services</a></li>
+                        <li><a class="scrollto" href="#portfolio">Portfolio</a></li>
+                        <li><a class="scrollto" href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+
+            </div><!-- End row -->
+
+        </div><!-- End container -->
+
+    </footer><!-- End footer -->
+    <!-- ==============================================
+    SCRIPTS
+    =============================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+
+    <script src="../js/libs/bootstrap.min.js"></script>
+    <script src='../js/jquery.scrollto.js'></script>
+    <script src='../js/jquery.flexslider.min.js'></script>
+    <script src='../js/twitterFetcher_v10_min.js'></script>
+    <script src='../js/jquery.fitvids.js'></script>
+    <script src='../js/jquery.masonry.min.js'></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/shapes.js"></script>
+
+</body>
+
+</html>
